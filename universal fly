@@ -1,0 +1,5 @@
+-- Universal Speed Hack Script
+local player = game.Players.LocalPlayer
+local humanoid = player.Character.Humanoid
+
+humanoid.WalkSpeed = 100 -- Adjust the value to set the speed
