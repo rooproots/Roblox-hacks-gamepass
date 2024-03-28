@@ -1,0 +1,13 @@
+local gamepassId = 987654321 -- Replace 987654321 with the gamepass ID you want to unlock
+
+local player = game.Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+gui.Parent = player.PlayerGui
+
+local button = Instance.new("TextButton")
+button.Parent = gui
+button.Position = UDim2.new(0.5, 0, 0.5, 0)
+button.Text = "Unlock Gamepass"
+button.MouseButton1Click:Connect(function()
+    game:GetService("MarketplaceService"):PerformPurchase(gamepassId)
+end)
